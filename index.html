@@ -1,0 +1,7 @@
+{% extends "base.html" %} 
+{% block main_content %} 
+<p><img src="{{url_for('static', filename='title.jpg')}}" alt="title" id="title"/></p>
+<p id="instructions"><b>How to Play: Use the arrow keys &#8592&#8593&#8594&#8595 to move the robber around the screen and collect gold coins. Avoid colliding with the policemen. High scores are saved to the LeaderBoard!</b></p>
+<p><a href="{{url_for('game')}}"><img src="{{url_for('static', filename='play_button.png')}}" alt="play"/></a></p>
+
+{% endblock %} 

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Game</title>
+        <link href="{{ url_for('static', filename='styles.css') }}" rel="stylesheet"  />
+        <script src="{{ url_for('static', filename='game.js') }}" type="module"></script>
+    </head>
+
+<body>
+    <header>
+        <h1>
+            {{ title }}
+        </h1>
+        <nav>
+            </ul>
+            <li><a href="{{ url_for('index') }}">&#127968Home</a></li>
+            <li>
+                <a href="{{ url_for('leaderboard') }}">&#128202LeaderBoard</a>
+            </li>
+            
+            {% if g.user %}
+            <li>
+                <p>Username: {{ g.user }}</p>
+            </li>
+            <li>
+                <a href="{{ url_for('logout') }}">Logout</a>
+            </li>
+            {% else %}
+            <li>
+                <a href="{{ url_for('sign_up') }}">Sign up</a>
+            </li>
+            <li>
+                <a href="{{ url_for('login') }}">Login</a>
+            </li>
+            </nav>
+
+            {% endif %}
+    </header>
+    <main>
+        
+        {% block main_content %}
+    
+        {% endblock %}
+        
+    </main>
+    
+
+</body>
+
+</html>

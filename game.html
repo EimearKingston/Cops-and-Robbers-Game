@@ -1,0 +1,8 @@
+{% extends "base.html" %} 
+{% block main_content %} 
+<h2 id="score"></h2>
+<canvas width="512" height="320"></canvas>
+<h2 id="outcome"></h2>
+<p id="game"><a href="{{url_for('game')}}">Play again!</a></p>
+
+{% endblock %} 

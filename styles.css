@@ -1,0 +1,121 @@
+canvas{
+    /* background-color: black; */
+    border: white solid 0.5em;
+    display:block;
+    margin:auto;
+    
+}
+html{
+    background-color:black;
+}
+/* html{
+    background-image:url('background.jpg');
+} */
+h2{
+    text-align:center;
+}
+p{
+    text-align:center;
+    /* background-color:white; */
+}
+#instructions{
+    background-color:white;
+    border:grey solid 1em;
+}
+#title{
+    background-color:black;
+}
+#score{
+    background-color:white;
+}
+#game{
+    background-color:white;
+    /* background-image:url('background.jpg'); */
+}
+#outcome{
+    background-color:white;
+    text-align:center;
+}
+/* header{
+    background-color:white;
+} */
+/* #game>p{
+    background-color:white;
+} */
+form{
+    background-color:white;
+}
+#leaderboard{
+    background-color:white;
+}
+table{
+    border-collapse:collapse;
+    width:80%;
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+}
+th,td{
+    border: royalblue solid 0.5em;
+    vertical-align: middle;
+    border-right: 1px solid royalblue;
+    border-left: 1px solid royalblue;
+    border-bottom: 1px solid royalblue;
+    border-top:1px solid royalblue;
+}
+nav{
+    text-align:center;
+}
+@media (hover: hover){
+    li:hover{
+    background-color:white;
+    
+    }
+}
+/* @media (hover: hover){
+    p a:hover{
+    background-color:white;
+    
+    }
+} */
+/* footer{
+    background-color: green;
+    padding:1em;
+    border-radius:0.5em;
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+} */
+nav li{
+    
+    display:inline-block;
+    background-color:gray;
+    list-style:none;
+    font-size:larger;
+    flex:1;
+    
+
+    
+    padding:0.5em;
+    
+    text-decoration: none;
+   
+    border:gray solid 0.5em;
+    
+
+    border-radius:1em; 
+    font-family:'Times New Roman', 'Cambria, Cochin', Georgia, Times, 'Times New Roman', serif 
+    
+}
+/* a{
+    border-radius:5em;
+} */
+h1{
+    text-decoration-color: white;
+    background-color: white;
+    text-align:center;
+}
+li>p{
+    background-color: white;
+}
